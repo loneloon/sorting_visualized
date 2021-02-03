@@ -43,7 +43,10 @@ def heap_sort(arr):
 
 
 if display_visuals:
-    motion = Visualizer(2560, 1080, max_val, 0)
+    print("\nEnter your display resolution:")
+    resolution = [int(input("Width: ")), int(input("Height: "))]
+
+    motion = Visualizer(resolution[0], resolution[1], max_val, 0)
     motion.animation_loop(heap_sort, input_array)
 
 
